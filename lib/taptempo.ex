@@ -3,7 +3,7 @@ defmodule Taptempo do
     {opts, _, _} = OptionParser.parse(
       args,
       aliases: [p: :precision, r: :reset_time, s: :sample_size, h: :help],
-      strict: [precision: :integer, reset_time: :integer, help: :boolean ]
+      strict: [precision: :integer, reset_time: :integer, sample_size: :integer, help: :boolean ]
     )
 
     state = %{
